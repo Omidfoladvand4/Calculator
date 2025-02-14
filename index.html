@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="result" placeholder="0" pattern="[A-Z]" readonly />
+      <div class="buttons">
+        <button onclick="clearResult()">C</button>
+        <button onclick="deleteLast()">CE</button>
+        <button onclick="operate('/')">÷</button>
+        <button onclick="operate('*')">x</button>
+        <button onclick="addNumber('7')">7</button>
+        <button onclick="addNumber('8')">8</button>
+        <button onclick="addNumber('9')">9</button>
+        <button onclick="operate('-')">-</button>
+        <button onclick="addNumber('4')">4</button>
+        <button onclick="addNumber('5')">5</button>
+        <button onclick="addNumber('6')">6</button>
+        <button onclick="operate('+')">+</button>
+        <button onclick="addNumber('1')">1</button>
+        <button onclick="addNumber('2')">2</button>
+        <button onclick="addNumber('3')">3</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="addNumber('0')">0</button>
+        <button onclick="addNumber('.')">.</button>
+      </div>
+    </div>
+  </body>
+</html>
